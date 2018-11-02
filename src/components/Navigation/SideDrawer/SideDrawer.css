@@ -1,4 +1,4 @@
-.SideDrawer{
+.SideDrawer {
     position: fixed;
     width: 280px;
     max-width: 70%;
@@ -18,15 +18,15 @@
     }
 }
 
-.Open{
+.Open {
     transform: translateX(0);
 }
 
-.Closed{
+.Close {
     transform: translateX(-100%);
 }
 
-.Logo{
+.Logo {
     height: 11%;
     margin-bottom: 32px;
 }

@@ -1,6 +1,6 @@
 .Input {
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
 }
 
@@ -26,12 +26,7 @@
     background-color: #ccc;
 }
 
-.Invalid { 
+.Invalid {
     border: 1px solid red;
     background-color: #FDA49A;
-}
-
-.ValidationError {
-    color: red;
-    margin: 5px 0;
 }
