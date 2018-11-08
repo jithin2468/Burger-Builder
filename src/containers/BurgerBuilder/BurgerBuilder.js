@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import Aux from '../../hoc/Auxiliary/Auxiliary';
+import Aux from '../../hoc/Aux/Aux';
 import Burger from '../../components/Burger/Burger';
 import BuildControls from '../../components/Burger/BuildControls/BuildControls';
 import Modal from '../../components/UI/Modal/Modal';
@@ -37,13 +37,12 @@ class BurgerBuilder extends Component {
     }
 
     purchaseHandler = () => {
-        if(this.props.isAuthenticated) {
+        if (this.props.isAuthenticated) {
             this.setState( { purchasing: true } );
         } else {
             this.props.onSetAuthRedirectPath('/checkout');
             this.props.history.push('/auth');
         }
-        
     }
 
     purchaseCancelHandler = () => {
